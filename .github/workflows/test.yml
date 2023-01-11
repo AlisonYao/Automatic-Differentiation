@@ -1,0 +1,22 @@
+name: best_autodiff Tests
+
+on:
+  push:
+    branches:
+      - main
+      
+  workflow_dispatch:
+
+jobs:
+  test_autodiff:
+    name: test best_autodiff implementation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install python dependencies
+        run: python -m pip install pytest numpy
+      - name: Run best_autodiff tests
+        run: (cd tests && ./run_tests.sh CI)
