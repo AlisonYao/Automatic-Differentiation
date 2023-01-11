@@ -1,0 +1,30 @@
+[project]
+name = "best_autodiff"
+version = "0.0.7"
+description = "Automatic differentiation package performing forward and reverse mode"
+authors = [
+    {name = "Isabella Bossa", email="isabellabossa@g.harvard.edu"},
+    {name = "Isha Vaish", email="ishavaish@g.harvard.edu"},
+    {name = "Isidora Diaz", email="idiaz@g.harvard.edu"},
+    {name = "Alison Yao", email="yuhan_yao@harvard.edu"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://code.harvard.edu/CS107/team02"

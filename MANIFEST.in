@@ -1,0 +1,2 @@
+include docs/documentation.ipynb
+include demo/demo.ipynb
